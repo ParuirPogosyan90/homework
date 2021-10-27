@@ -8,6 +8,7 @@ public class ArrayExample {
         int tmp=Array[0];
         Array[0]=Array[1];
         Array[1]=tmp;
+//   կլյուչավոր բառեր են
         Arrays.sort(Array);
         System.out.println(Arrays.toString(Array));
     }

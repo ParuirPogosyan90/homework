@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class JavaArraySort {
     public static void main(String[] args) {
         int[] Array={3,6,8,5,67,98,23,45,78,65};
+ //թվերին տալիս ենք տառերի մասիվ
         String[]strArr={"E","A","S","O","W","Q","I","P","T","F"};
         Arrays.sort( Array);
         Arrays.sort(strArr);

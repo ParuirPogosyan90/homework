@@ -1,5 +1,12 @@
 package lesson10;
-
+//ստանում ենք այս պատկերը
+//   x
+//   x x
+//  x x x
+// x x x x
+//  x x x
+//   x x
+//    x
 public class FigurePainter3 {
     public static void main(String[] args) {
 

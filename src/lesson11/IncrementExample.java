@@ -1,4 +1,5 @@
 package lesson11;
+//եթե պլյուսով է սկսվում դա առաջնային գործոթյունն է կամ այլ կերպ ասաժ պրաիտետ
 // x=11
 // y=10
 public class IncrementExample {

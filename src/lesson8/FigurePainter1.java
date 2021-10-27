@@ -1,4 +1,10 @@
 package lesson8;
+//ստանում ենք այս պատկերը
+//x x x x x
+//x x x x
+//x x x
+//x x
+//x
 
 public class FigurePainter1 {
 

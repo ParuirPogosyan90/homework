@@ -3,7 +3,7 @@ package lesson7;
 public class FigurePainter {
 
     public static void main(String[] args) {
-
+//ստանում ենք այս պատկերը
         /*
          *
          *  *
