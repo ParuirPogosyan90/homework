@@ -1,6 +1,6 @@
 package lesson10;
 //ստանում ենք այս պատկերը
-//   x
+//    x
 //   x x
 //  x x x
 // x x x x
