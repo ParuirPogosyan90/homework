@@ -1,30 +1,21 @@
 package author;
 
-//Նշանակում է հեղինակ
 public class Author {
-    //ստրինգի օգնությամբ ուզում ենք անունը
     private String name;
-    //ուզում ենք ազգանունը
     private String surname;
-    //ուզում ենք տարիքը
-    private int arg;
-    //ուզում ենք էլեկտրոննի հասցեն
+    private int age;
     private String email;
-    // ուզում եքն սեռը
     private String gender;
 
-    //ջեներեյշնի միջոցով տալիս ենք կանստրուկտր
-    public Author(String name, String surname, int arg, String email, String gender) {
+    public Author(String name, String surname, int age, String email, String gender) {
         this.name = name;
         this.surname = surname;
-        this.arg = arg;
+        this.age = age;
         this.email = email;
         this.gender = gender;
     }
 
-    //տալիս ենք սեթ և գեթ մեթոդները
-    public Author(String name) {
-        this.name = name;
+    public Author() {
     }
 
     public String getName() {
@@ -43,12 +34,12 @@ public class Author {
         this.surname = surname;
     }
 
-    public int getArg() {
-        return arg;
+    public int getAge() {
+        return age;
     }
 
-    public void setArg(int arg) {
-        this.arg = arg;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getEmail() {
@@ -67,15 +58,40 @@ public class Author {
         this.gender = gender;
     }
 
-    //եվ ուզում ենք toString մեթոդը
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Author author = (Author) o;
+
+        if (age != author.age) return false;
+        if (name != null ? !name.equals(author.name) : author.name != null) return false;
+        if (surname != null ? !surname.equals(author.surname) : author.surname != null) return false;
+        if (email != null ? !email.equals(author.email) : author.email != null) return false;
+        return gender != null ? gender.equals(author.gender) : author.gender == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (surname != null ? surname.hashCode() : 0);
+        result = 31 * result + age;
+        result = 31 * result + (email != null ? email.hashCode() : 0);
+        result = 31 * result + (gender != null ? gender.hashCode() : 0);
+        return result;
+    }
+
     @Override
     public String toString() {
         return "Author{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", arg=" + arg +
+                ", age=" + age +
                 ", email='" + email + '\'' +
                 ", gender='" + gender + '\'' +
                 '}';
     }
 }
+
