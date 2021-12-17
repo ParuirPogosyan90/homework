@@ -6,7 +6,7 @@ public class Author {
     private int age;
     private String email;
     private String gender;
-
+//նույն անունը ունեցող երկու փոփոխականների դեպքում օգտագործվում է դիս մեթոդը
     public Author(String name, String surname, int age, String email, String gender) {
         this.name = name;
         this.surname = surname;
@@ -14,7 +14,7 @@ public class Author {
         this.email = email;
         this.gender = gender;
     }
-
+//օգտագործում ենք գեթ և սեք մեթոդները  այսինքն դնել և հանել
     public Author() {
     }
 
@@ -58,7 +58,7 @@ public class Author {
         this.gender = gender;
     }
 
-
+//ստուգում
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -72,7 +72,7 @@ public class Author {
         if (email != null ? !email.equals(author.email) : author.email != null) return false;
         return gender != null ? gender.equals(author.gender) : author.gender == null;
     }
-
+//Բնութագրոիմ է ինթ թիվը
     @Override
     public int hashCode() {
         int result = name != null ? name.hashCode() : 0;
@@ -82,7 +82,7 @@ public class Author {
         result = 31 * result + (gender != null ? gender.hashCode() : 0);
         return result;
     }
-
+//վերադարձնում է բնութագրող օբյեկտը
     @Override
     public String toString() {
         return "Author{" +
